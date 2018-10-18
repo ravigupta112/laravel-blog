@@ -47,3 +47,6 @@ Route::post('todo/save/{id}',[
     'uses' => 'TodosController@save',
     'as' => 'todo.save'
 ]);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
